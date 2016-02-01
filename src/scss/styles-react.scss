@@ -1,0 +1,42 @@
+@import "lmn.tarantula/sass/vender/normalize";
+@import "chameleon";
+
+
+html {
+  background: #faf8ef;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  color: #FF530D;
+}
+
+.container {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  padding: 20px;
+  background: #FF530D;
+  border-radius: 20px;
+}
+
+.letter {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  padding: 36px 0;
+  text-align: center;
+  background: white;
+  border-radius: 15px;
+  background: darken(#faf8ef, 3);
+
+  &.empty:after {
+    content: 'a';
+    visibility: hidden;
+    line-height: 20px;
+  }
+}
